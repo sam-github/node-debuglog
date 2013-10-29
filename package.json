@@ -1,6 +1,6 @@
 {
   "name": "debuglog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "backport of util.debuglog from node v0.11",
   "license": "MIT",
   "main": "debuglog.js",
