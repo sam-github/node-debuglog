@@ -1,6 +1,6 @@
 var util = require('util');
 
-module.exports = util.debuglog || debuglog;
+module.exports = (util && util.debuglog) || debuglog;
 
 var debugs = {};
 var debugEnviron = process.env.NODE_DEBUG || '';
