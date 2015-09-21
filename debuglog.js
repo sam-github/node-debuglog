@@ -12,7 +12,7 @@ function debuglog(set) {
       var pid = process.pid;
       debugs[set] = function() {
         var msg = util.format.apply(exports, arguments);
-        console.error('%s %d: %s', set, pid, msg);
+        console.error('%s: %s %d: %s', new Date().toString(), set, pid, msg);
       };
     } else {
       debugs[set] = function() {};
